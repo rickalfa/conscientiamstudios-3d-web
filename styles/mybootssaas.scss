@@ -1,0 +1,113 @@
+
+
+$body-bg: #080808;
+$body-color: #0f0f0f;
+
+
+$font-family-sans-serif:'MuseoModerno', cursive;
+
+
+
+
+/* Sidebar */
+.sidebar {
+   
+    text-emphasis-color: blue;
+    left: 0;
+    padding: 10px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 100%;
+  
+  }
+  
+ 
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(37, 11, 129, 0.16), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+
+/* SOCIAL MEDIA ICONS*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 65px;
+  
+    text-decoration: none;
+    margin: 5px 2px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+
+    border-color:black
+
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+
+    border-radius: 25%;
+    border-color: blue;
+
+    border-width: 5px;
+
+  }
+
+
+#vizual{
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+#back3d{
+
+    z-index: 1;
+ }
+
+div.boxsc{
+
+  background-color: green;
+
+  opacity: 0.5;
+
+    overflow-y: scroll;
+
+    scrollbar-width: 20px;
+    scrollbar-color: pink lightblue;
+
+    height: 70vh;
+    width: 73vw;
+
+
+}
+
+.subbox{
+
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
