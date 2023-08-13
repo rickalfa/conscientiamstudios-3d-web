@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* Sidebar */
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/material-icons/iconfont/material-icons.css";
 .sidebar {
   -webkit-text-emphasis-color: blue;
           text-emphasis-color: blue;
@@ -26,12 +28,12 @@
 /* SOCIAL MEDIA ICONS*/
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 65px;
   text-decoration: none;
-  margin: 5px 2px;
-  border-style: solid;
-  border-radius: 50%;
+  margin: 3px 0px 0px 5px;
+  border-width: 3px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
 }
 
 .fa:hover {
@@ -47,9 +49,18 @@
   border-width: 5px;
 }
 
+.nacontent {
+  padding: 3px;
+  height: 80vh;
+  width: 90%;
+}
+
 #vizual {
+  top: 0px;
   position: absolute;
   z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
 #back3d {
@@ -57,13 +68,18 @@
 }
 
 div.boxsc {
-  background-color: green;
-  opacity: 0.5;
   overflow-y: scroll;
-  scrollbar-width: 20px;
-  scrollbar-color: pink lightblue;
   height: 70vh;
-  width: 73vw;
+  width: 100%;
+}
+
+.content-green {
+  opacity: 0.8;
+  background-color: rgb(79, 122, 77);
+  height: 70vh;
+  width: 96vw;
+  position: absolute;
+  z-index: -1;
 }
 
 .subbox {
