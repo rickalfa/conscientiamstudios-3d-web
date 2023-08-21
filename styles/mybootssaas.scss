@@ -4,10 +4,28 @@ $body-bg: #080808;
 $body-color: #0f0f0f;
 
 
-$font-family-sans-serif:'MuseoModerno', cursive;
+
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
+
+:root{
+
+  --bs-body-font-family:'MuseoModerno';
+}
+
+div{
+ font-family: 'MuseoModerno';
+
+
+}
+
+.titulo{
+
+  
 
 
 
+}
 
 /* Sidebar */
 .sidebar {
@@ -36,22 +54,41 @@ $font-family-sans-serif:'MuseoModerno', cursive;
   }
 
 
+.border-logo{
+
+  border: 8px solid transparent;
+  padding: 15px;
+
+  border-image: url("../resources/imgs/interfaz_scifi01.png") 30 round;
+
+
+
+}
+
+
 /* SOCIAL MEDIA ICONS*/
 .fa {
     padding: 20px;
-    font-size: 30px;
-    width: 65px;
   
+    
     text-decoration: none;
-    margin: 5px 2px;
-    border-style: solid;
-    border-radius: 50%;
+    margin: 3px 0px 0px 5px;
+    
+    border-width: 3px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+
+    
   }
   
   .fa:hover {
     opacity: 0.7;
 
-    border-color:black
+    border-color:black;
+    border-bottom-style: solid;
+
+    transform: translateY(-5px);
 
 }
 
@@ -67,41 +104,66 @@ $font-family-sans-serif:'MuseoModerno', cursive;
 
   }
 
+  .nacontent{
+
+
+    padding: 3px;
+    height: 80vh;
+    width: 90%;
+
+
+  }
+
 
 #vizual{
 
-    position: absolute;
-    z-index: 1;
-
+  top: 0px;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 }
+
 
 #back3d{
 
-    z-index: 1;
- }
+  z-index: 1;
+}
 
 div.boxsc{
 
-  background-color: green;
-
-  opacity: 0.5;
 
     overflow-y: scroll;
 
-    scrollbar-width: 20px;
-    scrollbar-color: pink lightblue;
-
     height: 70vh;
-    width: 73vw;
+    width: 100%;
 
 
 }
 
+.content-green{
+
+  opacity: 0.8;
+
+  background-color: rgb(79, 122, 77);
+
+  height: 70vh;
+  width: 96vw;
+
+  position: absolute;
+  z-index: -1;
+
+}
+
+
 .subbox{
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: #2afff4;
+  border-width: 5px;
+  border-radius: 0px 20px 20px 20px;
 
-
-    height: 100%;
-    width: 100%;
 
 }
 
@@ -111,3 +173,7 @@ div.boxsc{
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
+
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/material-icons/iconfont/material-icons.css";

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conscientiamstudios</title>
 
+
+    <link rel="icon" type="image/x-icon" href="resources/imgs/logo_ccts_02_FAVICON.png">
+
 <!-- #region FONTAWESOME-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- #endregion FONTAWESOME-- -->
@@ -34,7 +37,7 @@
 <!-- #region  COllapse Navbar-->
 
       <div class="collapse " id="navbarToggleExternalContent" data-bs-theme="dark">
-         <div class="nacontent">
+         <div class="nacontent border-logo ">
              <div class="p-2">
               <h5 class="text-body-emphasis h4">Conscientiamstudios dev. indie videogame</h5>
               
@@ -77,17 +80,25 @@
         <!-- #region 1to RAW -->
           <div class="row">
 
- 
-         <h1 class="">Conscientiamstudios </h1>
+          <div class=" col-lg-12 img-fluid " 
+              style="background-image: url('resources/imgs/frame_gui_scifi_03.png');
+               background-size: 65% 58px;
+               background-repeat: no-repeat;">
+               
+               <h2 class="text-info px-3">Conscientiamstudios </h2>
+
+          </div>
+
+      
 
           <div class="col-lg">
           <!-- #region BG GREEN-->
-          <div class="bg-success" style="--bs-bg-opacity: .5;"> 
+          <div class="bg-dark rounded-4" style="--bs-bg-opacity: 0.6;"> 
             
-                  <div class="boxsc text-black-50 border border-primary-subtle rounded-3" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-2 rounded-2" tabindex="0">
+                  <div class="boxsc text-white rounded-3" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary  rounded-2" tabindex="0">
               
                        <!-- #region SUBSECCION-->
-                      <div id="scrollspyHeading1" class="subbox border border-primary-subtle rounded-4"> 
+                      <div id="scrollspyHeading1" class="subbox  rounded-4"> 
                           <h4 >First heading</h4>
                            <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
@@ -97,7 +108,7 @@
                       <!-- #endregion SUBSECCIOPN -->     
           
                    <!-- #region SUBSECCION-->
-                      <div id="scrollspyHeading2" class="subbox border border-primary-subtle rounded-4"> 
+                      <div id="scrollspyHeading2" class="subbox  rounded-4"> 
                           <h4 >First heading</h4>
                            <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
@@ -106,7 +117,7 @@
                       </div>
                       <!-- #endregion SUBSECCIOPN -->
                    <!-- #region SUBSECCION-->
-                       <div id="scrollspyHeading3" class="subbox border border-primary-subtle rounded-4"> 
+                       <div id="scrollspyHeading3" class="subbox  rounded-4"> 
                           <h4 >First heading</h4>
                            <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
@@ -116,7 +127,7 @@
                       <!-- #endregion SUBSECCIOPN -->
           
                                     <!-- #region SUBSECCION-->
-                       <div id="scrollspyHeading4" class="subbox border border-primary-subtle rounded-4"> 
+                       <div id="scrollspyHeading4" class="subbox rounded-4"> 
                           <h4 >First heading</h4>
                            <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
@@ -153,10 +164,10 @@
 
             <div class="col-6 mb-0">
               <div class="d-flex justify-content-center">
-                <a href="#" class="bi bi-twitter border border-bottom-0 rounded-top p-1" style="font-size: 2rem; color: #e664ed;"></a>
-                 
+                <a href="#" class="bi bi-twitter fa border border-bottom-0 rounded-top p-1" style="font-size: 2rem; color: #e664ed;"></a>
                 <a href="#" class="bi bi-facebook fa rounded-top p-1" style="font-size: 2rem; color: white;"></a>
                 <a href="#" class="bi bi-discord bg-dark fa rounded-top p-1" style="font-size: 2rem; color:#0a65c5;"></a>
+                <a href="#" class="bi bi-twitch fa  rounded-top p-2" style="font-size: 2rem; color:#0a65c5;; " ></a>
               </div>
   
             </div>
@@ -183,20 +194,17 @@
         
    
 
-          <div class="col-lg-12">
+          <div class="col-lg-12 ">
           
                  <!-- #region FOOTER-->         
 
                  <footer>
-                   <div class="mt-0 p-2 bg-dark text-white text-center">
-                 
-                      <p>Conscientiamstudios</p>
+                   <div class="mt-0 p-2 border-logo rounded-pill  bg-dark text-white text-center" style="--bs-border-opacity: 0.2;">
+                              
 
-
-                     
                      <!-- Copyright -->
-                       <div class="footer-copyright text-center py-3">© 2023 Copyright:
-                        <a href="/"> MDBootstrap.com</a>
+                       <div class="footer-copyright text-center ">© 2023 Copyright:
+                        <a href="/"> Conscientiamstudios.com</a>
                       </div>
                       <!-- Copyright -->
 
