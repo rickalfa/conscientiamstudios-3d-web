@@ -26,7 +26,9 @@
     
 <body>
   <!-- #region 3D-->
- <div id="back3d"></div>
+ <div id="back3d">
+ 
+</div>
 
  <!-- #region VIZUALIZACION-->
   <div  id="vizual">
@@ -37,22 +39,28 @@
 <!-- #region  COllapse Navbar-->
 
       <div class="collapse " id="navbarToggleExternalContent" data-bs-theme="dark">
-         <div class="nacontent border-logo ">
-             <div class="p-2">
-              <h5 class="text-body-emphasis h4">Conscientiamstudios dev. indie videogame</h5>
+         <div class="nacontent " >
+
+             <div class="p-2 bg-dark border border-info rounded-left mx-4" style="--bs-bg-opacity: 0.8;">
+              <h5 class="text-info h4">Conscientiamstudios dev. indie videogame</h5>
               
-              <span class="text-body-secondary">dev. assets- unreal engine  app webs.</span>
+              <span class="text-info">dev. assets- unreal engine  app webs.</span>
+              
+              <button id="btnenvio" class="btn btn-danger">Press the button to interact with the environment</button>
+
               </div>
        
           </div>
       </div>
 
-
+ <!-- #region NAVBAR-->
        <nav id="navbar-example2" class="navbar navbar-dark bg-dark rounded-pill">
          <div class="container-fluid">
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
            </button>
+
+           <img src="resources/imgs/logo_ccts_favicon.png" width="35" height="35" class="img-rounded" alt="Cinque Terre"> 
 
            <a class="navbar-brand text-light" href="#">Conscientiamstudios</a>
                <ul class="nav nav-pills">
@@ -60,14 +68,14 @@
                    <a class="nav-link" href="#scrollspyHeading1">Home</a>
                  </li>
                  <li class="nav-item">
-                   <a class="nav-link" href="#scrollspyHeading2">works</a>
+                   <a class="nav-link" href="#scrollspyHeading2">games</a>
                  </li>
            
             
                 <li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">members</a></li>
                 <li class="nav-item"><a class="nav-link" href="#scrollspyHeading4">Projects</a></li>
         
-                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading5">Fifth</a></li>
+                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading5">Contanct</a></li>
                      
                </ul>  
 
@@ -80,12 +88,12 @@
         <!-- #region 1to RAW -->
           <div class="row">
 
-          <div class=" col-lg-12 img-fluid " 
+          <div class=" col-lg-12" 
               style="background-image: url('resources/imgs/frame_gui_scifi_03.png');
                background-size: 65% 58px;
                background-repeat: no-repeat;">
                
-               <h2 class="text-info px-3">Conscientiamstudios </h2>
+               <h2 class="text-info px-4">Conscientiamstudios </h2>
 
           </div>
 
@@ -98,7 +106,7 @@
                   <div class="boxsc text-white rounded-3" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary  rounded-2" tabindex="0">
               
                        <!-- #region SUBSECCION-->
-                      <div id="scrollspyHeading1" class="subbox  rounded-4"> 
+                      <div id="scrollspyHeading1" class="subbox "> 
                           <h4 >First heading</h4>
                            <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
@@ -108,7 +116,7 @@
                       <!-- #endregion SUBSECCIOPN -->     
           
                    <!-- #region SUBSECCION-->
-                      <div id="scrollspyHeading2" class="subbox  rounded-4"> 
+                      <div id="scrollspyHeading2" class="subbox "> 
                           <h4 >First heading</h4>
                            <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
@@ -117,7 +125,7 @@
                       </div>
                       <!-- #endregion SUBSECCIOPN -->
                    <!-- #region SUBSECCION-->
-                       <div id="scrollspyHeading3" class="subbox  rounded-4"> 
+                       <div id="scrollspyHeading3" class="subbox "> 
                           <h4 >First heading</h4>
                            <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
@@ -126,15 +134,28 @@
                       </div>
                       <!-- #endregion SUBSECCIOPN -->
           
-                                    <!-- #region SUBSECCION-->
-                       <div id="scrollspyHeading4" class="subbox rounded-4"> 
+                           <!-- #region SUBSECCION-->
+                       <div id="scrollspyHeading4" class="subbox"> 
                           <h4 >First heading</h4>
                            <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
                            mucho textomucho textomucho textomucho textomucho texto
                            </p>
                       </div>
-                <!-- #endregion SUBSECCIOPN -->
+          
+                         <!-- #endregion SUBSECCIOPN -->
+
+                         <!-- #region SUBSECCION-CONTACT-->
+                        <div id="scrollspyHeading5" class="subbox">
+
+                          <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
+                           mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
+                           mucho textomucho textomucho textomucho textomucho texto
+                           </p>
+
+                         </div>
+
+
           
              
                <!-- #endregion CONTENT SUBSECCION -->
@@ -241,9 +262,9 @@
     } 
     </script>
    
-   <script type="module" src="resources/js/mainthree.js">
+   <script type="module" src="resources/js/mainthree.js"></script>
 
-   </script>
+   <script type="module" src="resources/js/animdom.js"></script>
 
 </body>
 </html>

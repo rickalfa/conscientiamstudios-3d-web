@@ -38,6 +38,7 @@ const clock = new THREE.Clock();
 
     let mixer;
     let mixer01;
+    let mixer02;
 
     init();
     animate();
@@ -114,13 +115,11 @@ function init(){
 				}
 
     
-     
-
 
        /**CARGAMOS ARCHIVO FBX*/
        const loadFbx = new FBXLoader();
 
-       loadFbx.load( 'resources/js/models3d/artifact_ring/artifact_ALL_ring.fbx', function ( object ) {
+       loadFbx.load( 'resources/js/models3d/artifact_ring_large/artifact_ALL_ring_02.fbx', function ( object ) {
 
             
               mixer = new THREE.AnimationMixer( object );
@@ -180,6 +179,38 @@ function init(){
             } );
 
 
+            /** Cargamos archivo FBX HOMI */
+                            /**CARGAMOS ARCHIVO FBX */
+       const loadFbx02 = new FBXLoader();
+
+       loadFbx02.load( 'resources/js/models3d/homi/homi_3d_02.fbx', function ( object02 ) {
+
+              mixer02 = new THREE.AnimationMixer( object02 );
+   
+              object02.position.set(-3.1, 1.5, 2);
+
+              const action02 = mixer02.clipAction( object02.animations[ 0 ] );
+              action02.play();
+   
+              object02.traverse( function ( child ) {
+   
+                if ( child.isMesh ) {
+   
+                  child.castShadow = true;
+                  child.receiveShadow = true;
+   
+                }
+
+             
+              } );
+
+          
+              scene.add( object02 );
+
+            } );
+
+
+
 
             /**cambiar Posicion del cubo */
             cube.position.set(1, 2, 20);
@@ -202,7 +233,7 @@ function init(){
             function onError() {}
     
             const loader = new OBJLoader( );
-            loader.load( 'resources/js/models3d/logo_concientiamstudios_humi.fbx', function ( obj ) {
+            loader.load( 'resources/js/homi/homi_3d_02.fbx', function ( obj ) {
     
                scene.add(obj);
     
@@ -234,11 +265,14 @@ function onWindowResize() {
 
       requestAnimationFrame( animate );
 
-      const delta = clock.getDelta();
+      const delta = clock.getDelta(); // Obtenemos el valor Delta del objeto CLOCK que es el avlor de la unidad de tiempo
+
 
 			if ( mixer ) mixer.update( delta );
 
       if (mixer01) mixer01.update(delta);
+
+      if( mixer02) mixer02.update(delta);
 
 
 
