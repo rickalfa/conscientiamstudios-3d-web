@@ -105,31 +105,69 @@
             
                   <div class="boxsc text-white rounded-3" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary  rounded-2" tabindex="0">
               
-                       <!-- #region SUBSECCION-->
+                       <!-- #region HOME SUBSECCION-->
                       <div id="scrollspyHeading1" class="subbox "> 
-                          <h4 >First heading</h4>
-                           <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
-                           mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
-                           mucho textomucho textomucho textomucho textomucho texto
+                          <h4 >ABOUT US</h4>
+                           <p class="">Conscientiamstudios is an independent desktop and web application video game development studio.
+                             Our goal is to develop quality, stable software that is healthy for humanity.
+                             What does healthy software mean for humanity? software that is not intended to generate addiction and / or completely find out your actions and even what you think.
+                              I believe that technology should be used for mental and spiritual growth for a good social coexistence on the planet.
                            </p>
                       </div>
                       <!-- #endregion SUBSECCIOPN -->     
           
                    <!-- #region SUBSECCION-->
-                      <div id="scrollspyHeading2" class="subbox "> 
-                          <h4 >First heading</h4>
-                           <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
-                           mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
-                           mucho textomucho textomucho textomucho textomucho texto
-                           </p>
+                      <div id="scrollspyHeading2" class="subbox"> 
+                          <h4 >Games </h4>
+                          <div class="row justify-content-md-center">
+                              <div class="col-lg-2">
+                                   <div class="card" style="width:500px">
+                                     <img class="card-img-top" src="resources/imgs/wound_insilence_portada_02.jpg" alt="Card image">
+                                     <div class="card-img-overlay">
+                                       <h4 class="card-title text-light">WOUND In Silence</h4>
+                                       <p class="card-text text-info"> Horror Pc-Game.</p>
+                                       <a href="http://woundinsilence.com/" class="btn btn-primary" target="_blank"> Link access</a>
+                                     </div>
+                                   </div>
+
+                                  <p class=""> Pc - Game </p>
+
+                              </div>
+                          </div>
+
                       </div>
                       <!-- #endregion SUBSECCIOPN -->
                    <!-- #region SUBSECCION-->
                        <div id="scrollspyHeading3" class="subbox "> 
-                          <h4 >First heading</h4>
-                           <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
-                           mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
-                           mucho textomucho textomucho textomucho textomucho texto
+                          <h4 >Members</h4>
+                          <div class="row justify-content-md-center">
+                               <div class="col col-lg-2">
+                                 1 of 3
+                               </div>
+                               <div class="col-md-auto">
+                                 Variable width content
+                               </div>
+                               <div class="col col-lg-2">
+                                 3 of 3
+                               </div>
+                             </div>
+                             <div class="row">
+                               <div class="col">
+                                 <img src="resources/imgs/foto_perfil.jpeg"  class="rounded-circle" width="256" height="256"> 
+                               </div>
+                               <div class="col-md-auto">
+                                 Variable width content
+                               </div>
+                               <div class="col col-lg-2">
+                                 3 of 3
+                               </div>
+                             </div>
+
+
+                          
+
+
+                           <p class="">
                            </p>
                       </div>
                       <!-- #endregion SUBSECCIOPN -->
@@ -178,7 +216,7 @@
 <div class="container">
         <!-- #region ROW  SOCIAL MEDIA-->
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-3 ">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-1">
 
            <div class="col mb-3"> </div>
            <div class="col mb-3"> </div>
@@ -186,9 +224,9 @@
             <div class="col-6 mb-0">
               <div class="d-flex justify-content-center">
                 <a href="#" class="bi bi-twitter fa border border-bottom-0 rounded-top p-1" style="font-size: 2rem; color: #e664ed;"></a>
-                <a href="#" class="bi bi-facebook fa rounded-top p-1" style="font-size: 2rem; color: white;"></a>
+                <a href="#" class="bi bi-facebook fa border border-bottom-1  rounded-top p-1" style="font-size: 2rem; color: white;"></a>
                 <a href="#" class="bi bi-discord bg-dark fa rounded-top p-1" style="font-size: 2rem; color:#0a65c5;"></a>
-                <a href="#" class="bi bi-twitch fa  rounded-top p-2" style="font-size: 2rem; color:#0a65c5;; " ></a>
+                <a href="#" class="bi bi-twitch fa  rounded-top p-1" style="font-size: 2rem; color:#0a65c5;; " ></a>
               </div>
   
             </div>
