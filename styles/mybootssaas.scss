@@ -1,9 +1,7 @@
 
 
-$body-bg: #080808;
-$body-color: #0f0f0f;
-
-
+//$body-bg: #646363;
+//$body-color: #0f0f0f;
 
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
@@ -78,6 +76,8 @@ div{
     border-top-style: solid;
     border-right-style: solid;
     border-left-style: solid;
+
+    transition: transform 0.3s linear;
 
     
   }
@@ -173,6 +173,12 @@ div.boxsc{
   padding: 10px;
 
 }
+
+
+$input-color-text: #fff;
+
+$form-text-color: #fff;
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";

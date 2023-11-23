@@ -19,6 +19,16 @@
 
   <script src="resources/js/bootstrap.js"></script>
   <script src="styles/boots.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
   
 </head>
 
@@ -140,36 +150,64 @@
                    <!-- #region SUBSECCION-->
                        <div id="scrollspyHeading3" class="subbox "> 
                           <h4 >Members</h4>
-                          <div class="row justify-content-md-center">
-                               <div class="col col-lg-2">
-                                 1 of 3
-                               </div>
-                               <div class="col-md-auto">
-                                 Variable width content
-                               </div>
-                               <div class="col col-lg-2">
-                                 3 of 3
-                               </div>
-                             </div>
-                             <div class="row">
-                               <div class="col">
+                          <div class="row bg-warning">
+                               <div class="col col-lg-2 bg-dark">
+                                  avatar
                                  <img src="resources/imgs/foto_perfil.jpeg"  class="rounded-circle" width="256" height="256"> 
+                             
                                </div>
                                <div class="col-md-auto">
                                  Variable width content
+                              
                                </div>
-                               <div class="col col-lg-2">
-                                 3 of 3
+                               <!-- #region ACCORDION-->
+                               <div class="col col-lg-2 bg-success">
+                              
+
+                                 <div id="accordion">
+                                      <div class="card">
+                                        <div class="card-header">
+                                          <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                            repositori git
+                                          </a>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                          <div class="card-body">
+                                           ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                        <div class="card-header">
+                                          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                          Collapsible Group Item #2
+                                        </a>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                          <div class="card-body">
+                                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                        <div class="card-header">
+                                          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                            Collapsible Group Item #3
+                                          </a>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                          <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              <!-- #endregion ACCORDION-->
+                                </div>
+
                                </div>
                              </div>
-
-
-                          
-
-
-                           <p class="">
-                           </p>
-                      </div>
+                   
                       <!-- #endregion SUBSECCIOPN -->
           
                            <!-- #region SUBSECCION-->
@@ -186,10 +224,31 @@
                          <!-- #region SUBSECCION-CONTACT-->
                         <div id="scrollspyHeading5" class="subbox">
 
-                          <p class="">... mucho texto mucho texto mucho textomucho textomucho textomucho
-                           mucho textomucho textomucho textomucho textomucho texto mucho texto mucho texto mucho textomucho textomucho textomucho
-                           mucho textomucho textomucho textomucho textomucho texto
-                           </p>
+                        <h5>Contact form</h5>
+                  
+                          <p class="">formulario contacto
+                       </p>
+                       <form action="/action_contact">
+                              <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                              </div>
+                              <div class="form-group">
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">messege</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                 </div>
+                             </div>
+                              <div class="form-group form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox"> Remember me
+                                </label>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                       </form> 
+
+                           <!-- Contact 1 - Bootstrap Brain Component -->
+           
 
                          </div>
 
