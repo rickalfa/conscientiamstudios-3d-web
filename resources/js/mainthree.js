@@ -83,8 +83,9 @@ function init(){
        mesh.rotation.x = - Math.PI / 2;
        mesh.position.set(0, -20, 0 );
        mesh.receiveShadow = true;
-       scene.add( mesh );
+      // scene.add( mesh );
 
+      /**CREACION SKYBOX */
 
        /**CREACION LENSFLARES TEXTURES */
 

@@ -17,6 +17,8 @@
 
 <link  href="styles/mybootssaas.css" rel="stylesheet" >
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
   <script src="resources/js/bootstrap.js"></script>
   <script src="styles/boots.js"></script>
 
@@ -82,8 +84,8 @@
                  </li>
            
             
-                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">members</a></li>
-                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading4">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">Members</a></li>
+                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading4">Galery</a></li>
         
                 <li class="nav-item"><a class="nav-link" href="#scrollspyHeading5">Contanct</a></li>
                      
@@ -147,7 +149,7 @@
 
                       </div>
                       <!-- #endregion SUBSECCIOPN -->
-                   <!-- #region SUBSECCION-->
+                   <!-- #region SUBSECCION MEMBERS-->
                        <div id="scrollspyHeading3" class="subbox "> 
                           <h4 >Members</h4>
                           <div class="row bg-warning">
@@ -156,48 +158,51 @@
                                  <img src="resources/imgs/foto_perfil.jpeg"  class="rounded-circle" width="256" height="256"> 
                              
                                </div>
-                               <div class="col-md-auto">
-                                 Variable width content
+                               <div class="col-md-auto text-black">
+                                nombre : Ricardo Betancourt
                               
                                </div>
-                               <!-- #region ACCORDION-->
-                               <div class="col col-lg-2 bg-success">
+                               <!-- #region ACCORDION MEMBERS-->
+                               <div class="col col-lg-4 bg-success">
                               
 
                                  <div id="accordion">
-                                      <div class="card">
+                                      <div class="card bg-dark">
                                         <div class="card-header">
                                           <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                            repositori git
+                                              Occupation
                                           </a>
                                         </div>
                                         <div id="collapseOne" class="collapse" data-parent="#accordion">
-                                          <div class="card-body">
-                                           ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          <div class="card-body text-light">
+                                            creador de Conscientiamstudios desarrollador de app-web, diseñador de modelos 3D y animaciones
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="card">
+                                      <div class="card bg-dark">
                                         <div class="card-header">
                                           <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                          Collapsible Group Item #2
+                                          Social Links
                                         </a>
                                         </div>
                                         <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                           <div class="card-body">
-                                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                             <li><a href="https://www.artstation.com/shamael6"><i class="bi bi-badge-3d-fill">3D works</i></a></li>
+                                             <li><a href="https://github.com/rickalfa"><i class="bi bi-github"> github</i></a></li>
+                                             <li><a href="https://linkedin.com/in/ricardo-betancourt-076920148"><i class="bi bi-linkedin"> linkedin</i></a></li>
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="card">
+                                      <div class="card bg-dark">
                                         <div class="card-header">
                                           <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                            Collapsible Group Item #3
+                                             About me
                                           </a>
                                         </div>
                                         <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                          <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          <div class="card-body text-light">
+                                              soy analista programador, y me gusta mucho crear cosas desde 0, cosas que salgan de mi mente y poder trabajarlas.
+                                              la programacion me da la oportunidad de darle vida a todos esos sueños
                                           </div>
                                         </div>
                                       </div>
@@ -230,7 +235,7 @@
                        </p>
                        <form action="/action_contact">
                               <div class="form-group">
-                                <label for="email">Email address:</label>
+                                <label for="email">Email contant:</label>
                                 <input type="email" class="form-control" placeholder="Enter email" id="email">
                               </div>
                               <div class="form-group">
