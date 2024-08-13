@@ -87,6 +87,14 @@ function init(){
 
       /**CREACION SKYBOX */
 
+      let SkyBox = new THREE.CubeTextureLoader().load(
+        [
+          
+        ]
+      )
+
+
+
        /**CREACION LENSFLARES TEXTURES */
 
        const textureLoader = new THREE.TextureLoader();

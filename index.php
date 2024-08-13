@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 
+<!-- local styles file css-->
 <link  href="styles/mybootssaas.css" rel="stylesheet" >
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -113,18 +114,27 @@
 
           <div class="col-lg">
           <!-- #region BG GREEN-->
-          <div class="bg-dark rounded-4" style="--bs-bg-opacity: 0.6;"> 
+          <div class="bg-dark rounded-4" style="--bs-bg-opacity: 0.99;"> 
             
                   <div class="boxsc text-white rounded-3" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary  rounded-2" tabindex="0">
               
                        <!-- #region HOME SUBSECCION-->
                       <div id="scrollspyHeading1" class="subbox "> 
                           <h4 >ABOUT US</h4>
-                           <p class="">Conscientiamstudios is an independent desktop and web application video game development studio.
-                             Our goal is to develop quality, stable software that is healthy for humanity.
-                             What does healthy software mean for humanity? software that is not intended to generate addiction and / or completely find out your actions and even what you think.
-                              I believe that technology should be used for mental and spiritual growth for a good social coexistence on the planet.
-                           </p>
+                          <div class="container-fluid ">
+                               <div class="row">
+                                  <div class="col-sm-3 ">
+                                     <p class="subboxtext">Conscientiamstudios: un estudio independiente de desarrollo de videojuegos,
+                                       tambien aplicaciones de escritorio y web. Nuestra misión es crear software de calidad, estable y
+                                        beneficioso para la humanidad. ¿Qué significa software saludable para la humanidad? 
+                                        Desarrollar programas que no buscan generar adicción ni rastrear 
+                                        completamente tus acciones o pensamientos.
+                                        Creemos que la tecnología debe ser una herramienta para el 
+                                        crecimiento mental y espiritual, promoviendo una buena convivencia social en el planeta
+                                      </p>
+                                  </div>
+                               </div>
+                          </div>
                       </div>
                       <!-- #endregion SUBSECCIOPN -->     
           
@@ -149,18 +159,24 @@
 
                       </div>
                       <!-- #endregion SUBSECCIOPN -->
+
+
+                      <!-- PERFILES INTEGRANTES --->
                    <!-- #region SUBSECCION MEMBERS-->
                        <div id="scrollspyHeading3" class="subbox "> 
                           <h4 >Members</h4>
                           <div class="row bg-warning">
                                <div class="col col-lg-2 bg-dark">
                                   avatar
-                                 <img src="resources/imgs/foto_perfil.jpeg"  class="rounded-circle" width="256" height="256"> 
-                             
+                                
+                                    <img src="resources/imgs/foto_perfil.jpeg"  class="avatar" width="256" height="256"> 
+                                 
                                </div>
                                <div class="col-md-auto text-black">
-                                nombre : Ricardo Betancourt
-                              
+                                <p class="lead">
+                                nombre : Ricardo Betancourt <br>
+                                email : angelshamael@gmail.com
+                                </p>
                                </div>
                                <!-- #region ACCORDION MEMBERS-->
                                <div class="col col-lg-4 bg-success">
@@ -169,7 +185,7 @@
                                  <div id="accordion">
                                       <div class="card bg-dark">
                                         <div class="card-header">
-                                          <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                          <a class="card-link text-light" data-toggle="collapse" href="#collapseOne">
                                               Occupation
                                           </a>
                                         </div>
@@ -187,7 +203,7 @@
                                         </div>
                                         <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                           <div class="card-body">
-                                             <li><a href="https://www.artstation.com/shamael6"><i class="bi bi-badge-3d-fill">3D works</i></a></li>
+                                             <li><a href="https://www.artstation.com/shamael6"><i class="bi bi-badge-3d-fill" style="font-size: 2rem; color:#0a53a5;">3D works</i></a></li>
                                              <li><a href="https://github.com/rickalfa"><i class="bi bi-github"> github</i></a></li>
                                              <li><a href="https://linkedin.com/in/ricardo-betancourt-076920148"><i class="bi bi-linkedin"> linkedin</i></a></li>
                                           </div>
@@ -287,7 +303,7 @@
 
             <div class="col-6 mb-0">
               <div class="d-flex justify-content-center">
-                <a href="#" class="bi bi-twitter fa border border-bottom-0 rounded-top p-1" style="font-size: 2rem; color: #e664ed;"></a>
+                <a href="#" class="bi bi-twitter-x fa border border-bottom-0 rounded-top p-1" style="font-size: 2rem; color: #e664ed;"></a>
                 <a href="#" class="bi bi-facebook fa border border-bottom-1  rounded-top p-1" style="font-size: 2rem; color: white;"></a>
                 <a href="#" class="bi bi-discord bg-dark fa rounded-top p-1" style="font-size: 2rem; color:#0a65c5;"></a>
                 <a href="#" class="bi bi-twitch fa  rounded-top p-1" style="font-size: 2rem; color:#0a65c5;; " ></a>
