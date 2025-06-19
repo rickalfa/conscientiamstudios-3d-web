@@ -1,6 +1,10 @@
 
 
-import * as THREE from 'three';
+import * as THREE from 'https://unpkg.com/three@0.149.0/build/three.module.js';
+
+const urlthreeaddons = "https://unpkg.com/three@0.149.0/examples/jsm/"
+
+console.log(' file mainthree.js')
 
 const scene = new THREE.Scene();
 /**Scne Background Color */
@@ -9,16 +13,18 @@ scene.background = new THREE.Color().setHSL( 0.51, 0.4, 0.01, THREE.SRGBColorSpa
 // scene.fog = new THREE.Fog( 0x000000, 250, 800 );
 
 /**modulo LENSFLARE luces  */
-import { Lensflare, LensflareElement } from 'three/addons/objects/Lensflare.js';
+
+/**three/addons/objects/Lensflare.js */
+import { Lensflare, LensflareElement } from 'https://unpkg.com/three@0.149.0/examples/jsm/objects/Lensflare.js';
 
 
-import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+import { FBXLoader } from 'https://unpkg.com/three@0.149.0/examples/jsm/loaders/FBXLoader.js';
 
 /** MODULO para cargar OBJ */
-import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+import { OBJLoader } from 'https://unpkg.com/three@0.149.0/examples/jsm/loaders/OBJLoader.js';
 
 /**Control de camara */
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.149.0/examples/jsm/controls/OrbitControls.js';
 
 
 //** CLOCK OBJECT  */ */
