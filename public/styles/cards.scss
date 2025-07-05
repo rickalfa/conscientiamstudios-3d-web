@@ -1,0 +1,122 @@
+    .card-container {
+
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      border-style: solid;
+      border-width: 10px;
+      border-color: #2afff4;
+      width: 40.5rem;
+    }
+
+    .image-trapezoid {
+     margin: 10px;
+      position: relative;
+      width: 250px;
+      clip-path: polygon(20% 0, 95% 0, 67% 100%, 0% 100%);
+      background-color: red;
+      padding: 15px;
+      perspective: 1000px;
+    }
+
+    .avatar {
+      width: 100%;
+      transform: rotateY(-10deg) rotateZ(-2deg);
+      transition: transform 0.5s ease;
+      border-radius: 12px;
+    }
+
+    .avatar:hover {
+      transform: rotateY(5deg) rotateZ(10deg) scale(2.03);
+    }
+
+    .name {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    #accordion {
+      flex: 1;
+    }
+
+    .card.bg-dark {
+      background-color: #1e1e1e !important;
+      color: white;
+      border: none;
+    }
+
+    .card-link, .card-link:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .card-body a {
+      display: block;
+      color: #0dcaf0;
+      margin-bottom: 8px;
+      text-decoration: none;
+    }
+
+    .card-body a i {
+      margin-right: 6px;
+    }
+
+
+ /**
+SECCON HOME lANDING PAGE
+ **/
+
+     section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .col {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .subboxtext {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .tool-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .tool {
+      width: 100px;
+      text-align: center;
+    }
+
+    .tool img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .tool img:hover {
+      transform: scale(1.1);
+    }
+
+    .tool-name {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }

@@ -5,17 +5,137 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
+@import url('./cards.scss');
+@import url('./carrusel.scss');
+
+
 
 :root{
 
   --bs-body-font-family:'MuseoModerno';
 }
 
+.card {
+      width: 320px;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    .name {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .accordion {
+      margin-top: 10px;
+    }
+    .accordion-item {
+      border-top: 1px solid #ccc;
+    }
+    .accordion-header {
+      cursor: pointer;
+      padding: 12px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .accordion-content {
+      padding: 0 12px 12px;
+      display: none;
+    }
+    .social-link {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #333;
+    }
+    .social-link i {
+      margin-right: 8px;
+      width: 20px;
+    }
+
 div{
  font-family: 'MuseoModerno';
 
 
 }
+
+.overlay-center {
+  position: fixed;        /* Permanece en pantalla al hacer scroll */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenido */
+  z-index: 9999;          /* Muy por encima del resto de elementos */
+  background: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#seccionmain{
+
+  height: 98vh;
+  position: relative;
+
+  background-image: url('../resources/imgs/background_gui.png');
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+/**
+Animacion de opacidad del contenido
+
+*/
+
+#scene-fadeout{
+
+  opacity: 1;
+
+  display: grid;
+  animation: fadeOut 15s ease-in-out forwards;
+}
+
+
+#scene-main {
+  opacity: 0;
+  animation: fadeIn 14s ease-in-out forwards;
+}
+
+/* Animación para hacer que el div aparezca */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+  /* Animación para hacer que el div aparezca */
+@keyframes fadeOut {
+  to {
+    display: none;
+    opacity: 0;
+  }
+
+}
+
+
+
+
 
 .logo-nav{
 
@@ -125,9 +245,9 @@ div{
 #vizual{
 
   top: 0px;
-  position: absolute;
-  z-index: 1;
-  height: 100%;
+  position: fixed;
+  z-index: 2;
+  height: 90vh;
   width: 100%;
 }
 
@@ -142,7 +262,7 @@ div.boxsc{
 
     overflow-y: scroll;
 
-    height: 70vh;
+    height: 75vh;
     width: 100%;
 
 
@@ -169,7 +289,7 @@ div.boxsc{
   border-style: solid;
   border-color: #2afff4;
   border-width: 5px;
-  border-radius: 0px 20px 20px 20px;
+ // border-radius: 0px 20px 20px 20px;
   padding: 15px;
 
 
@@ -186,8 +306,8 @@ div.boxsc{
   border-bottom-width: 20px;
   border-radius: 0px 20px 20px 20px;
 
-  height: 56vh;
-  width: 40vw;
+  height: 45vh;
+  ///width: 40vw;
  
 
 }

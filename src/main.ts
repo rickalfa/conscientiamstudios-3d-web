@@ -14,6 +14,8 @@ import * as bootstrap from 'bootstrap';
 // Si usas SASS con Bootstrap, importa tu archivo SCSS principal
 import '../public/styles/mybootssaas.scss';
 
+//modulos APP
+import { contenidoHTML, insertarContenido } from './app/home/home';
 
 
 // Importar los iconos de Bootstrap (si no los incluyes directamente en HTML)
@@ -29,16 +31,33 @@ console.log('Bootstrap versión:', bootstrap.Collapse.VERSION); // Ejemplo para 
 
 // Tu código TypeScript aquí
 document.addEventListener('DOMContentLoaded', () => {
-    const appElement = document.createElement('h1');
-    appElement.textContent = '¡Hola desde Vite y TypeScript!';
-    appElement.classList.add('text-primary', 'mt-5', 'text-center');
-    document.body.appendChild(appElement);
+  
+
+    
+   
 
     // Ejemplo de un componente Bootstrap (un botón)
-    const button = document.createElement('button');
-    button.className = 'btn btn-success mt-3';
-    button.textContent = 'Haz clic aquí';
-    document.body.appendChild(button);
+    const button = document.getElementById('btncontenido');
+    if (button != null) {
+         button.className = 'btn btn-outline-primary';
+         button.textContent = 'explorar';
+         button.addEventListener('click', function () {
+            insertarContenido();
+            
+              
+
+         });
+         
+        console.log('DONE boton contenido')
+    }else{
+
+        console.log('FAIL boton contenido')
+
+    }
+
+
+
+   
 
     // Inicializar un tooltip de Bootstrap (requiere que Bootstrap JS esté importado)
     // const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
