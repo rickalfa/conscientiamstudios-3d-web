@@ -7,12 +7,15 @@
 //
 //import 'js/bootstrap.js'
 
+import './styles/mybootssaas.scss';
+
+import './js/mainthree.js';
+
 
 // Importar Bootstrap JS (incluye Popper.js automáticamente)
 import * as bootstrap from 'bootstrap';
 
-// Si usas SASS con Bootstrap, importa tu archivo SCSS principal
-import './styles/mybootssaas.scss';
+
 
 //modulos APP
 import { insertarContenido } from './app/home/home';
