@@ -1,0 +1,22 @@
+objective: "Crear un visor 3D web con three.js usando Vite y TypeScript"
+users: "Clientes que ven modelos 3D"
+frontend:
+  tools:
+    - vite
+    - typescript
+    - sass
+    - bootstrap
+    - three.js
+backend:
+  framework: laravel
+  language: php
+models_format: gltf
+interaction:
+  - rotate
+  - zoom
+  - pan
+status: "fase inicial"
+help_needed:
+  - arquitectura
+  - buenas practicas
+  - integracion backend

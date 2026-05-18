@@ -1,0 +1,24 @@
+
+
+#scene-main{
+
+    .image-container {
+    position: relative;
+    .bg-img {
+        width: 100%;
+        height: 9rem;
+        object-fit: cover;
+        filter: brightness(90%); // oscurece un poco la imagen
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+       transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+    }
+
+}

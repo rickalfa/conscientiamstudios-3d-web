@@ -15,7 +15,7 @@ import * as bootstrap from 'bootstrap';
 import '../public/styles/mybootssaas.scss';
 
 //modulos APP
-import { contenidoHTML, insertarContenido } from './app/home/home';
+import { insertarContenido } from './app/home/home';
 
 
 // Importar los iconos de Bootstrap (si no los incluyes directamente en HTML)
