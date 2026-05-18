@@ -12,7 +12,7 @@
 import * as bootstrap from 'bootstrap';
 
 // Si usas SASS con Bootstrap, importa tu archivo SCSS principal
-import '../public/styles/mybootssaas.scss';
+import './styles/mybootssaas.scss';
 
 //modulos APP
 import { insertarContenido } from './app/home/home';
